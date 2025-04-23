@@ -12,6 +12,7 @@ export async function POST(req: Request) {
   if (currency !== "INR" && currency !== "USD") {
     return NextResponse.json({ error: "Invalid currency" }, { status: 400 });
   }
+  
 
   if(currency=='INR') {
 
